@@ -1,0 +1,70 @@
+body {
+    background: url("chat.svg");
+}
+
+.container {
+    height: 600px;
+    width: 400px;
+
+    margin: 15% auto 0 auto;
+    padding: 10px;
+
+    background-color: rgb(255, 183, 106);
+    border: 5px solid rgb(255, 143, 23);
+    box-shadow: 12px 12px 2px 1px rgba(145, 70, 26, 0.528);
+}
+
+.status-text {
+    text-transform: uppercase;
+}
+
+.chat__top {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 5px;
+
+    height: 60px;
+
+    background-color: rgb(255, 220, 183);
+    border: 5px solid rgb(255, 143, 23);
+}
+
+.chat__input-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+}
+
+.chat__input {
+    background-color: rgb(250, 237, 224);
+    border: 2.5px solid rgb(255, 143, 23);
+}
+
+.chat__down {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    height: 480px;
+    overflow: auto;
+    overflow-x: hidden;
+
+    background-color: rgb(255, 220, 183);
+    border: 5px solid rgb(255, 143, 23);
+}
+
+.client-message,
+.server-message {
+    background-color: rgb(250, 237, 224);
+    border: 2.5px solid rgb(255, 143, 23);
+
+    word-wrap: break-word;
+    width: 45%;
+}
+
+.client-message {
+    align-self: flex-end;
+}
